@@ -2,7 +2,7 @@ version: '3'
 services:
   
   backend:
-    image:nohit03/node-todo:latest
+    image: nohit03/node-todo:latest
       
     ports:
       - "5000:5000"
