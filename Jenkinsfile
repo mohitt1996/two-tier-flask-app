@@ -24,7 +24,7 @@ pipeline{
         stage('deploy'){
             steps{
                 sh 'docker-compose down'
-                sh "docker-compose up -d --no-deps --build backend"
+                sh "docker-compose up -d "
                 
                 
             }
