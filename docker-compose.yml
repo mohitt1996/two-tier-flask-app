@@ -20,9 +20,9 @@ services:
       MYSQL_DATABASE: ${DB}
       MYSQL_USER: ${USER_NAME}
       MYSQL_PASSWORD: ${PASSWORD}
-    volumes:
-      - ./message.sql:/docker-entrypoint-initdb.d/message.sql   # Mount sql script into container's /docker-entrypoint-initdb.d directory
-      - mysql-data:/var/lib/mysql  # Mount the volume for MySQL data storage
+    #volumes:
+     # - ./message.sql:/docker-entrypoint-initdb.d/message.sql   # Mount sql script into container's /docker-entrypoint-initdb.d directory
+      # - mysql-data:/var/lib/mysql  # Mount the volume for MySQL data storage
 
 volumes:
   mysql-data:
