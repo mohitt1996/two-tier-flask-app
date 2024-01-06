@@ -16,6 +16,7 @@ COPY requirements.txt .
 # Install app dependencies
 RUN pip install mysqlclient
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade Flask Werkzeug
 
 # Copy the rest of the application code
 COPY . .
